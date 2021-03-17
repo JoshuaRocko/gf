@@ -25,6 +25,11 @@
       console.log("event::: ", button.style.top)
       changePosition(button)
     })
+
+    button.addEventListener("click", (event) => {
+      console.log("event::: ", button.style.top)
+      changePosition(button)
+    })
     
     function changePosition(element) {
       element.style.top = Math.floor((Math.random() * 630) + 1) + "px";
