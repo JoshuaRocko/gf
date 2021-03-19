@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <title>Novia</title>
 </head>
@@ -14,10 +17,29 @@
     <h1 class="title">¿Quieres ser mi novia?</h1>
     <div class="box">
       <div class="content">
-        <button class="yes" id="button-yes"> Si </button>
+        <button class="yes" id="button-yes" data-toggle="modal" data-target="#Modal1"> Si </button>
         <button class="no" id="button-no"> No </button>
       </div>
     </div>  
+    <!-- Modal -->
+    <div class="modal fade" id="Modal1">
+      <div class="modal-dialog">
+          <!-- Contenido del modal-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                  <h4 class="modal-title"><p>Ahora somos novios!</p></h4>
+              </div>
+              <div class="modal-body">
+                  <p> Sabia que dirias que si ♥ </p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  
     <img src="assets/corazon.png" alt="" class="img">
   <script>
     let button = document.getElementById("button-no");
@@ -34,8 +56,7 @@
     function changePosition(element) {
       element.style.top = Math.floor((Math.random() * 630) + 1) + "px";
       element.style.left = Math.floor((Math.random() * 600) + 1) + "px";
-    }
-    
+    }   
   </script>
     
   </script>

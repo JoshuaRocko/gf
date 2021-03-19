@@ -3,6 +3,10 @@
   font-family: 'fuente';
 }
 
+body{
+  background-color: #fd81ac;
+}
+
 .title {
  font-family: 'fuente';
  color: black;
@@ -10,8 +14,10 @@
  text-align: center;
 }  
 
-body{
-  background-color: #fd81ac;
+
+
+p{
+  text-align: center;
 }
 
 .box {
@@ -68,12 +74,14 @@ button{
   }
 
 .img{
-  max-width: 40%;
+  max-width: 20%;
   transition: object-position 2s;
-  margin-left: 41%;
+  margin-left: 42.5%;
+  margin-top: 10%;
 
 }
 
 .img:hover{
   filter: brightness(.1);
 }
+
