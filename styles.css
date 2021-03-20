@@ -74,10 +74,11 @@ button{
   }
 
 .img{
-  max-width: 20%;
+  max-width: 100%;
   transition: object-position 2s;
-  margin-left: 42.5%;
-  margin-top: 10%;
+  margin-left: 41.5%;
+  margin-top: 5%;
+  clip-path: inset(26% 26% 26% 26%);
 
 }
 
