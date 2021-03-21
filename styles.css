@@ -14,8 +14,6 @@ body{
  text-align: center;
 }  
 
-
-
 p{
   text-align: center;
 }
@@ -76,13 +74,17 @@ button{
 .img{
   max-width: 100%;
   transition: object-position 2s;
-  margin-left: 41.5%;
+  margin-left: 40.8%;
   margin-top: 5%;
   clip-path: inset(26% 26% 26% 26%);
+  cursor: pointer;
+}
 
+.img2{
+  max-width: 20%;
+  margin-left: 40%;
 }
 
 .img:hover{
   filter: brightness(.1);
 }
-
