@@ -81,8 +81,8 @@ button{
 }
 
 .img2{
-  max-width: 20%;
-  margin-left: 40%;
+  max-width: 100%;
+  height: auto;
 }
 
 .img:hover{
